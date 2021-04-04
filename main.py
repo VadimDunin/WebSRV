@@ -46,7 +46,7 @@ def debug_msg(msg):
         print(f"DEBUG: {msg}")
 
 
-def run():
+def run_server():
     Server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     Server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     Server.bind(('localhost', 5000))
@@ -66,4 +66,4 @@ def run():
 
 
 if __name__ == '__main__':
-    run()
+    run_server()
