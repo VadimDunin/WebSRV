@@ -47,6 +47,10 @@ def debug_msg(msg):
 
 
 def run_server():
+    """
+    Запускает сервер
+    :return:
+    """
     Server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     Server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     Server.bind(('localhost', 5000))
